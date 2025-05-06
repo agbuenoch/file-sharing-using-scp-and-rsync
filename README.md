@@ -3,9 +3,9 @@
 **The LinkedIn article:**
 [File Sharing Using scp and rsync](https://www.linkedin.com/pulse/file-sharing-using-scp-rsync-enoch-agbu-yeynf/)
 
-**Author**
+**Author**<br>
 Agbu, Enoch Amachundi  
-[🔗 LinkedIn](https://www.linkedin.com/in/agbuenoch)
+[🔗 LinkedIn](https://www.linkedin.com/in/agbuenoch)<br>
 [🔗 X](https://www.x.com/agbuenoch)
 
 One essential requirement for building a powerful home cybersecurity lab is the ability to securely and efficiently transfer files between your Ubuntu Server VM and your Windows client machine.
