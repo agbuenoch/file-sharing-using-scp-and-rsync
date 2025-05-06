@@ -11,9 +11,9 @@ Check out the screenshot folder for the screenshots of the entire process.
 
 ### Step 1: Settings/Configurations of “SSH and rsync” on Ubuntu Server VM
 
-### Step 2: Settings/Configurations of “SSH and rsync” on Windows Client Machine.
-  OPTION A: Using Windows Subsystem for Linux (WSL) (PREFERRED/RECOMMENDED).<br>
-  OPTION B: Using PowerShell (OPTIONAL).
+### Step 2: Settings/Configurations of “SSH and rsync” on Windows Client Machine.  
+OPTION A: Using Windows Subsystem for Linux (WSL) (PREFERRED/RECOMMENDED).
+OPTION B: Using PowerShell (OPTIONAL).
   
 ### Step 3: Copy Files using "scp".
 **OPTION A: Copy from Ubuntu server VM to Windows client machine via WSL.<br>**
