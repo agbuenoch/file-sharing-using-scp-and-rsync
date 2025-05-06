@@ -8,8 +8,8 @@ This guide provides two methods to transfer files, all from the Ubuntu server VM
 
 ## The following steps were carried out sequentially.
 Check out the **screenshot folder** for the screenshots of the entire process.
-> Anything inside the symbol <> is a placeholder; replace it with your system's values or argument.
-> When copying files, always include the file extension when writing file names, for example, myfile.html, packet.pcap, test.txt.
+> Anything inside the symbol <> is a placeholder; replace it with your system's values or argument.<br>
+> When copying files, always include the file extension when writing file names, for example, myfile.html, packet.pcap, test.txt. etc.<br>
 > "username" is different from "nameofuser". The username could be "agbuenoch", while the name of the user is "Agbu Enoch".
 
 ### Step 1: Settings/Configurations of “SSH and rsync” on Ubuntu Server VM
