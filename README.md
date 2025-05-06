@@ -83,8 +83,7 @@ ls -l<br>
 _sudo rsync -avz /ubuntu-server/path/to/filename <WSL-username>@<WSL-ip>:"/mnt/c/Users/windows-nameofuser/.../destination/"_<br>
 
 > The -avz are **options** (also called "**flags**") we passed to rsync, and they control how the file transfer happens.<br>
-  -a => Archive mode. It preserves important file properties (permissions, timestamps, symbolic links, etc.). It ensures the copied file  
-  is a true replica of the original.<br>
+  -a => Archive mode. It preserves important file properties (permissions, timestamps, symbolic links, etc.). It ensures the copied file    is a true replica of the original.<br>
   -v => Verbose. It makes the command show you more details during the transfer. You’ll see what files are being copied in real-time, 
   which is helpful for monitoring.<br>
   -z = Compression. This compresses file data during transfer. Especially useful for transferring over a network (like Ubuntu VM to WSL) 
