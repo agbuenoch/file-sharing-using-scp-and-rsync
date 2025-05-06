@@ -1,13 +1,5 @@
 # file-sharing-using-scp-and-rsync
 
-**The LinkedIn article:**
-[File Sharing Using scp and rsync](https://www.linkedin.com/pulse/file-sharing-using-scp-rsync-enoch-agbu-yeynf/)
-
-**Author**<br>
-Agbu, Enoch Amachundi  
-[🔗 LinkedIn](https://www.linkedin.com/in/agbuenoch)<br>
-[🔗 X](https://www.x.com/agbuenoch)
-
 One essential requirement for building a powerful home cybersecurity lab is the ability to securely and efficiently transfer files between your Ubuntu Server VM and your Windows client machine.
 
 This guide provides two methods to transfer files, all from the Ubuntu server VM terminal, covering:
@@ -110,3 +102,11 @@ _sudo rsync -avz <WSL-username>@<WSL-ip>:"/mnt/c/Users/windows-nameofuser/.../fi
 ## Which Method to Use?
 1. For one-time transfers: **scp**. 
 2. For large files: **rsync**.
+
+## LinkedIn Article.
+[File Sharing Using scp and rsync](https://www.linkedin.com/pulse/file-sharing-using-scp-rsync-enoch-agbu-yeynf/)
+
+## Author.
+Agbu, Enoch Amachundi  
+[🔗 LinkedIn](https://www.linkedin.com/in/agbuenoch)<br>
+[🔗 X](https://www.x.com/agbuenoch)
