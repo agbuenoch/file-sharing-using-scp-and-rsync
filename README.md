@@ -9,8 +9,8 @@ This guide provides two methods to transfer files, all from the Ubuntu server VM
 ## The following steps were carried out sequentially.
 Check out the **screenshot folder** for the screenshots of the entire process.
 > Anything inside the symbol <> is a placeholder; replace it with your system's values or argument.<br>
- When copying files, always include the file extension when writing file names, for example, myfile.html, packet.pcap, test.txt. etc.<br>
- "username" is different from "nameofuser". The username could be "agbuenoch", while the name of the user is "Agbu Enoch".
+  When copying files, always include the file extension when writing file names, for example, myfile.html, packet.pcap, test.txt. etc.<br>
+  "username" is different from "nameofuser". The username could be "agbuenoch", while the name of the user is "Agbu Enoch".
 
 ### Step 1: Settings/Configurations of “SSH and rsync” on Ubuntu Server VM.
 Install and enable SSH and rsync on the Ubuntu server.<br>
@@ -83,9 +83,12 @@ ls -l<br>
 _sudo rsync -avz /ubuntu-server/path/to/filename <WSL-username>@<WSL-ip>:"/mnt/c/Users/windows-nameofuser/.../destination/"_<br>
 
 > The -avz are **options** (also called "**flags**") we passed to rsync, and they control how the file transfer happens.<br>
-> -a => Archive mode. It preserves important file properties (permissions, timestamps, symbolic links, etc.). It ensures the copied file is a true replica of the original.<br>
-> -v => Verbose. It makes the command show you more details during the transfer. You’ll see what files are being copied in real-time, which is helpful for monitoring.<br>
-> -z = Compression. This compresses file data during transfer. Especially useful for transferring over a network (like Ubuntu VM to WSL) to speed up the process, especially for large files.<br>
+  -a => Archive mode. It preserves important file properties (permissions, timestamps, symbolic links, etc.). It ensures the copied file  
+  is a true replica of the original.<br>
+  -v => Verbose. It makes the command show you more details during the transfer. You’ll see what files are being copied in real-time, 
+  which is helpful for monitoring.<br>
+  -z = Compression. This compresses file data during transfer. Especially useful for transferring over a network (like Ubuntu VM to WSL) 
+  to speed up the process, especially for large files.<br>
   
 **OPTION II: Copy file from Ubuntu server VM directly to Windows machine (NOT via WSL).<br>**
 “rsync” is a Linux Tool. You cannot directly “rsync” from Ubuntu to a pure native Windows client machine without some Linux-like layer (WSL or Cygwin) on the Windows side. Therefore,     this option is not achievable, except you directly install “rsync” on the native Windows client machine (which is rare and complicated).<br>
