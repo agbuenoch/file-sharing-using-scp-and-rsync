@@ -106,7 +106,6 @@ _sudo rsync -avz <WSL-username>@<WSL-ip>:"/mnt/c/Users/windows-nameofuser/.../fi
 ## LinkedIn Article.
 [File Sharing Using scp and rsync](https://www.linkedin.com/pulse/file-sharing-using-scp-rsync-enoch-agbu-yeynf/)
 
-## Author.
-Agbu, Enoch Amachundi  
+## Connect with me.
 [🔗 LinkedIn](https://www.linkedin.com/in/agbuenoch)<br>
 [🔗 X](https://www.x.com/agbuenoch)
