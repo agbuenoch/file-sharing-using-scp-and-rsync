@@ -36,14 +36,14 @@ wsl --install
 
 **Ubuntu server Bash**<br>
 ```bash
-- sudo apt install ssh
-- ssh --version
-- rsync --help
-- sudo apt install rsync
-- cd /mnt/c/
-- ls -l | head -n 4
-- whoami
-- ip a
+- `sudo apt install ssh`
+- `ssh --version`
+- `rsync --help`
+- `sudo apt install rsync`
+- `cd /mnt/c/`
+- `ls -l | head -n 4`
+- `whoami`
+- `ip a`
 ```
 
 **OPTION B: Using PowerShell (OPTIONAL).**: Using PowerShell, install and enable SSH. Note that rsync cannot be installed directly using PowerShell because it is a Linux tool.<br>
