@@ -16,7 +16,7 @@ Check out the **screenshot folder** for the screenshots of the entire process.
 Install and enable SSH and rsync on the Ubuntu server.<br>
 **The list of all commands used in Step 1:<br>**
 **Ubuntu server Bash**<br>
-_ip a <br>
+- _ip a <br>
 ssh --version<br>
 wireshark --version<br>
 rsync --version<br>
@@ -104,8 +104,8 @@ sudo rsync -avz <WSL-username>@<WSL-ip>:"/mnt/c/Users/windows-nameofuser/.../fil
 2. For large files: **rsync**.
 
 ## LinkedIn Article.
-[File Sharing Using scp and rsync](https://www.linkedin.com/pulse/file-sharing-using-scp-rsync-enoch-agbu-yeynf/)
+- [File Sharing Using scp and rsync](https://www.linkedin.com/pulse/file-sharing-using-scp-rsync-enoch-agbu-yeynf/)
 
 ## Connect with me.
-[🔗 LinkedIn](https://www.linkedin.com/in/agbuenoch)<br>
-[🔗 X](https://www.x.com/agbuenoch)
+- [🔗 LinkedIn](https://www.linkedin.com/in/agbuenoch)<br>
+- [🔗 X](https://www.x.com/agbuenoch)
