@@ -16,7 +16,7 @@ Check out the **screenshot folder** for the screenshots of the entire process.
 Install and enable SSH and rsync on the Ubuntu server.<br>
 **The list of all commands used in Step 1:<br>**
 **Ubuntu server Bash**<br>
-- _ip a <br>_
+- _`ip a` <br>_
 - _ssh --version<br>_
 - _wireshark --version<br>_
 - _rsync --version<br>_
@@ -66,14 +66,14 @@ Install and enable SSH and rsync on the Ubuntu server.<br>
 **The list of all commands used in Step 3, Option B:<br>**
 **Ubuntu server Bash**<br>
 - _ls -l<br>_
-- _sudo scp /ubuntu-server/path/to/filename <windows-username>@windows-ip:"C:\\Users\\windows-nameofuser\\...\\destination\\"<br>_
+- _`sudo scp /ubuntu-server/path/to/filename <windows-username>@windows-ip:"C:\\Users\\windows-nameofuser\\...\\destination\\"`<br>_
   
 **OPTION C: Copy file from Windows client machine (via WSL) to Ubuntu server VM.<br>**
 **The list of all commands used in Step 3, Option C:<br>**
 **Ubuntu server Bash**<br>
 - _pwd<br>_
 - _ls -l<br>_
-- _sudo scp <WSL-username>@<WSL-ip>:"/mnt/c/Users/windows-nameofuser/.../filename" /ubuntu-server/path/to/destination_
+- _`sudo scp <WSL-username>@<WSL-ip>:"/mnt/c/Users/windows-nameofuser/.../filename" /ubuntu-server/path/to/destination`_
   
 ### Step 4: Copy files using "rsync" (Fast Sync for Large Files).
 **OPTION I: Copy from Ubuntu server VM to Windows machine via WSL.<br>**
@@ -81,7 +81,7 @@ Install and enable SSH and rsync on the Ubuntu server.<br>
 **Ubuntu server Bash**<br>
 - _pwd<br>_
 - _ls -l<br>_
-- _sudo rsync -avz /ubuntu-server/path/to/filename <WSL-username>@<WSL-ip>:"/mnt/c/Users/windows-nameofuser/.../destination/"<br>_
+- _`sudo rsync -avz /ubuntu-server/path/to/filename <WSL-username>@<WSL-ip>:"/mnt/c/Users/windows-nameofuser/.../destination/"`<br>_
 
 > The -avz are **options** (also called "**flags**") we passed to rsync, and they control how the file transfer happens.<br>
   **-a => Archive mode**. It preserves important file properties (permissions, timestamps, symbolic links, etc.). It ensures the copied file    is a true replica of the original.<br>
@@ -98,7 +98,7 @@ Install and enable SSH and rsync on the Ubuntu server.<br>
 **Ubuntu server Bash**<br>
 - _pwd<br>_
 - _ls -l<br>_
-- _sudo rsync -avz <WSL-username>@<WSL-ip>:"/mnt/c/Users/windows-nameofuser/.../filename" /ubuntu-server/path/to/destination_
+- _`sudo rsync -avz <WSL-username>@<WSL-ip>:"/mnt/c/Users/windows-nameofuser/.../filename" /ubuntu-server/path/to/destination`_
 
 ## Which Method to Use?
 1. For one-time transfers: **scp**. 
