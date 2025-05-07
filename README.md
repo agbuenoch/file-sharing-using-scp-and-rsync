@@ -88,7 +88,7 @@ sudo scp /ubuntu-server/path/to/filename <windows-username>@windows-ip:"C:\\User
 ```bash
 pwd
 ls -l
-sudo scp <WSL-username>@<WSL-ip>:"/mnt/c/Users/windows-nameofuser/.../filename" /ubuntu-server/path/to/destination
+sudo scp <WSL-username>@<WSL-ip>:"/mnt/c/Users/windows-nameofuser/.../filename" /ubuntu-server/path/to/destination/
 ```
 
 ### Step 4: Copy files using "rsync" (Fast Sync for Large Files).
@@ -101,12 +101,12 @@ ls -l
 sudo rsync -avz /ubuntu-server/path/to/filename <WSL-username>@<WSL-ip>:"/mnt/c/Users/windows-nameofuser/.../destination/"
 ```
 
+
 > The -avz are **options** (also called "**flags**") we passed to rsync, and they control how the file transfer happens.<br>
-  **-a => Archive mode**. It preserves important file properties (permissions, timestamps, symbolic links, etc.). It ensures the copied file    is a true replica of the original.<br>
-  **-v => Verbose**. It makes the command show you more details during the transfer. You’ll see what files are being copied in real-time, 
-  which is helpful for monitoring.<br>
-  **-z = Compression**. This compresses file data during transfer. Especially useful for transferring over a network (like Ubuntu VM to WSL) 
-  to speed up the process, especially for large files.<br>
+**-a => Archive mode**. It preserves important file properties (permissions, timestamps, symbolic links, etc.). It ensures the copied file    is a true replica of the original.<br>
+**-v => Verbose**. It makes the command show you more details during the transfer. You’ll see what files are being copied in real-time, 
+which is helpful for monitoring.<br>
+**-z = Compression**. This compresses file data during transfer. Especially useful for transferring over a network (like Ubuntu VM to WSL) to speed up the process, especially for large files.<br>
   
 **OPTION II: Copy file from Ubuntu server VM directly to Windows machine (NOT via WSL).<br>**
 “rsync” is a Linux Tool. You cannot directly “rsync” from Ubuntu to a pure native Windows client machine without some Linux-like layer (WSL or Cygwin) on the Windows side. Therefore,     this option is not achievable, except you directly install “rsync” on the native Windows client machine (which is rare and complicated).<br>
@@ -128,5 +128,5 @@ sudo rsync -avz <WSL-username>@<WSL-ip>:"/mnt/c/Users/windows-nameofuser/.../fil
 - [File Sharing Using scp and rsync](https://www.linkedin.com/pulse/file-sharing-using-scp-rsync-enoch-agbu-yeynf/)
 
 ## Connect with me.
-- [🔗 LinkedIn](https://www.linkedin.com/in/agbuenoch)<br>
-- [🔗 X](https://www.x.com/agbuenoch)
+[🔗 LinkedIn](https://www.linkedin.com/in/agbuenoch)<br>
+[🔗 X](https://www.x.com/agbuenoch)
