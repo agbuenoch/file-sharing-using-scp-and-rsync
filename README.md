@@ -36,7 +36,7 @@ wsl --install
 
 **Ubuntu server Bash**<br>
 ```bash
-- _`sudo apt install ssh`_
+- sudo apt install ssh
 - ssh --version
 - rsync --help
 - sudo apt install rsync
