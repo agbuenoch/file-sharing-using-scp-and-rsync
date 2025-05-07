@@ -44,16 +44,16 @@ Install and enable SSH and rsync on the Ubuntu server.<br>
 **The list of all commands used in Step 2, Option B:<br>**
 **Windows PowerShell**<br>
 - _Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0<br>_
-_- Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0<br>_
-- Get-Service sshd<br>
-- Get-Service -Name sshd -StartupType 'Automatic'<br>
-- Start-Service sshd<br>
-- ipconfig<br>
-- whoami<br>
+- _Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0<br>_
+- _Get-Service sshd<br>_
+- _Get-Service -Name sshd -StartupType 'Automatic'<br>_
+- _Start-Service sshd<br>_
+- _ipconfig<br>_
+- _whoami<br>_
 - _exit<br>_
 
 **Ubuntu server Bash**<br>
-_- ping <windows_IPv4>
+_- ping <windows_IPv4>_
 - ssh <windows_username>@<windows_IPv4>_
 
 ### Step 3: Copy Files using "scp".
