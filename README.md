@@ -31,29 +31,29 @@ Install and enable SSH and rsync on the Ubuntu server.<br>
 - _wsl --install<br>_
 
 **Ubuntu server Bash**<br>
-- _sudo apt install ssh<br>
-- ssh --version<br>
-- rsync --help<br>
-- sudo apt install rsync<br>
-- cd /mnt/c/<br>
-- ls -l | head -n 4<br>
-- whoami<br>
-- ip a<br>_
+- _sudo apt install ssh<br>_
+- _ssh --version<br>_
+- _rsync --help<br>_
+- _sudo apt install rsync<br>_
+- _cd /mnt/c/<br>_
+- _ls -l | head -n 4<br>_
+- _whoami<br>_
+- _ip a<br>_
 
 **OPTION B: Using PowerShell (OPTIONAL).**: Using PowerShell, install and enable SSH. Note that rsync cannot be installed directly using PowerShell because it is a Linux tool.<br>
 **The list of all commands used in Step 2, Option B:<br>**
 **Windows PowerShell**<br>
-- _Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0<br>
-- Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0<br>
+- _Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0<br>_
+_- Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0<br>_
 - Get-Service sshd<br>
 - Get-Service -Name sshd -StartupType 'Automatic'<br>
 - Start-Service sshd<br>
 - ipconfig<br>
 - whoami<br>
-- exit<br>_
+- _exit<br>_
 
 **Ubuntu server Bash**<br>
-- _ping <windows_IPv4>
+_- ping <windows_IPv4>
 - ssh <windows_username>@<windows_IPv4>_
 
 ### Step 3: Copy Files using "scp".
