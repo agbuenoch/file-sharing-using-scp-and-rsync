@@ -15,6 +15,15 @@ Check out **[screenshots](screenshots)** folder for the screenshots of the entir
 ### Step 1: Settings/Configurations of “SSH and rsync” on Ubuntu Server VM.
 Install and enable SSH and rsync on the Ubuntu server.<br>
 **The list of all commands used in Step 1:<br>**
+```bash
+- ip a
+- ssh --version
+- wireshark --version
+- rsync --version
+- sudo systemctl status ssh
+- sudo systemctl status rsync
+- ssh <ubuntu_server_username>@<ubuntu_server_IPv4>
+```
 **Ubuntu server Bash**<br>
 - _`ip a`_<br>
 - _`ssh --version`_<br>
@@ -27,6 +36,9 @@ Install and enable SSH and rsync on the Ubuntu server.<br>
 ### Step 2: Settings/Configurations of “SSH and rsync” on Windows Client Machine.  
 **OPTION A: Using Windows Subsystem for Linux (WSL) (PREFERRED/RECOMMENDED):** Using the Windows Subsystem for Linux (WSL), install and enable SSH and rsync.<br>
 **The list of all commands used in Step 2, Option A.<br>**
+```powershell
+wsl --install
+```
 **Windows PowerShell**<br>
 - _`wsl --install`_<br>
 
@@ -103,14 +115,6 @@ Install and enable SSH and rsync on the Ubuntu server.<br>
 ## Which Method to Use?
 1. For one-time transfers: **scp**. 
 2. For large files: **rsync**.
-
-## 🔧 Installation
-```bash
-git clone https://github.com/your-username/project-name.git
-cd project-name
-chmod +x install.sh
-./install.sh
-```
 
 ## LinkedIn Article.
 - [File Sharing Using scp and rsync](https://www.linkedin.com/pulse/file-sharing-using-scp-rsync-enoch-agbu-yeynf/)
