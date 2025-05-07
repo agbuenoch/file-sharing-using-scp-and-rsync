@@ -65,13 +65,13 @@ Install and enable SSH and rsync on the Ubuntu server.<br>
 **OPTION B: Copy file from Ubuntu server VM directly to Windows machine (NOT via WSL).<br>**
 **The list of all commands used in Step 3, Option B:<br>**
 **Ubuntu server Bash**<br>
-- _ls -l_<br>_
-- _sudo scp /ubuntu-server/path/to/filename <windows-username>@windows-ip:"C:\\Users\\windows-nameofuser\\...\\destination\\"_<br>_
+- _ls -l<br>_
+- _sudo scp /ubuntu-server/path/to/filename <windows-username>@windows-ip:"C:\\Users\\windows-nameofuser\\...\\destination\\"<br>_
   
 **OPTION C: Copy file from Windows client machine (via WSL) to Ubuntu server VM.<br>**
 **The list of all commands used in Step 3, Option C:<br>**
 **Ubuntu server Bash**<br>
-- _pwd_<br>_
+- _pwd<br>_
 - _ls -l<br>_
 - _sudo scp <WSL-username>@<WSL-ip>:"/mnt/c/Users/windows-nameofuser/.../filename" /ubuntu-server/path/to/destination_
   
