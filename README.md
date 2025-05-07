@@ -15,6 +15,7 @@ Check out **[screenshots](screenshots)** folder for the screenshots of the entir
 ### Step 1: Settings/Configurations of “SSH and rsync” on Ubuntu Server VM.
 Install and enable SSH and rsync on the Ubuntu server.<br>
 **The list of all commands used in Step 1:<br>**
+**Ubuntu server Bash**
 ```bash
 - ip a
 - ssh --version
@@ -24,14 +25,6 @@ Install and enable SSH and rsync on the Ubuntu server.<br>
 - sudo systemctl status rsync
 - ssh <ubuntu_server_username>@<ubuntu_server_IPv4>
 ```
-**Ubuntu server Bash**<br>
-- _`ip a`_<br>
-- _`ssh --version`_<br>
-- _`wireshark --version`_<br>
-- _`rsync --version`_<br>
-- _`sudo systemctl status ssh`_<br>
-- _`sudo systemctl status rsync`_<br>
-- _`ssh <ubuntu_server_username>@<ubuntu_server_IPv4>`_
 
 ### Step 2: Settings/Configurations of “SSH and rsync” on Windows Client Machine.  
 **OPTION A: Using Windows Subsystem for Linux (WSL) (PREFERRED/RECOMMENDED):** Using the Windows Subsystem for Linux (WSL), install and enable SSH and rsync.<br>
