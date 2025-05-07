@@ -22,7 +22,7 @@ wireshark --version<br>
 rsync --version<br>
 sudo systemctl status ssh<br>
 sudo systemctl status rsync<br>
-ssh <ubuntu_server_username>@<ubuntu_server_IPv4>_
+- ssh <ubuntu_server_username>@<ubuntu_server_IPv4>_
 
 ### Step 2: Settings/Configurations of “SSH and rsync” on Windows Client Machine.  
 **OPTION A: Using Windows Subsystem for Linux (WSL) (PREFERRED/RECOMMENDED):** Using the Windows Subsystem for Linux (WSL), install and enable SSH and rsync.<br>
