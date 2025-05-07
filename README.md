@@ -16,45 +16,45 @@ Check out the **screenshot folder** for the screenshots of the entire process.
 Install and enable SSH and rsync on the Ubuntu server.<br>
 **The list of all commands used in Step 1:<br>**
 **Ubuntu server Bash**<br>
-- _`ip a` <br>_
-- _ssh --version<br>_
-- _wireshark --version<br>_
-- _rsync --version<br>_
-- _sudo systemctl status ssh<br>_
-- _sudo systemctl status rsync<br>_
-- _ssh <ubuntu_server_username>@<ubuntu_server_IPv4>_
+- _`ip a`_<br>
+- _`ssh --version`_<br>
+- _`wireshark --version`_<br>
+- _`rsync --version`_<br>
+- _`sudo systemctl status ssh`_<br>
+- _`sudo systemctl status rsync`_<br>
+- _`ssh <ubuntu_server_username>@<ubuntu_server_IPv4>`_
 
 ### Step 2: Settings/Configurations of “SSH and rsync” on Windows Client Machine.  
 **OPTION A: Using Windows Subsystem for Linux (WSL) (PREFERRED/RECOMMENDED):** Using the Windows Subsystem for Linux (WSL), install and enable SSH and rsync.<br>
 **The list of all commands used in Step 2, Option A.<br>**
 **Windows PowerShell**<br>
-- _wsl --install<br>_
+- _`wsl --install`<br>_
 
 **Ubuntu server Bash**<br>
-- _sudo apt install ssh<br>_
-- _ssh --version<br>_
-- _rsync --help<br>_
-- _sudo apt install rsync<br>_
-- _cd /mnt/c/<br>_
-- _ls -l | head -n 4<br>_
-- _whoami<br>_
-- _ip a<br>_
+- _`sudo apt install ssh`<br>_
+- _`ssh --version`<br>_
+- _`rsync --help`<br>_
+- _`sudo apt install rsync`<br>_
+- _`cd /mnt/c/`<br>_
+- _`ls -l | head -n 4`<br>_
+- _`whoami`<br>_
+- _`ip a`<br>_
 
 **OPTION B: Using PowerShell (OPTIONAL).**: Using PowerShell, install and enable SSH. Note that rsync cannot be installed directly using PowerShell because it is a Linux tool.<br>
 **The list of all commands used in Step 2, Option B:<br>**
 **Windows PowerShell**<br>
-- _Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0<br>_
-- _Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0<br>_
-- _Get-Service sshd<br>_
-- _Get-Service -Name sshd -StartupType 'Automatic'<br>_
-- _Start-Service sshd<br>_
-- _ipconfig<br>_
-- _whoami<br>_
-- _exit<br>_
+- _`Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0`<br>_
+- _`Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0`<br>_
+- _`Get-Service sshd`<br>_
+- _`Get-Service -Name sshd -StartupType 'Automatic'`<br>_
+- _`Start-Service sshd`<br>_
+- _`ipconfig`<br>_
+- _`whoami`<br>_
+- _`exit`<br>_
 
 **Ubuntu server Bash**<br>
-- _ping <windows_IPv4>_
-- _ssh <windows_username>@<windows_IPv4>_
+- _`ping <windows_IPv4>`_
+- _`ssh <windows_username>@<windows_IPv4>`_
 
 ### Step 3: Copy Files using "scp".
 **OPTION A: Copy from Ubuntu server VM to Windows client machine via WSL<br>**
@@ -65,22 +65,22 @@ Install and enable SSH and rsync on the Ubuntu server.<br>
 **OPTION B: Copy file from Ubuntu server VM directly to Windows machine (NOT via WSL).<br>**
 **The list of all commands used in Step 3, Option B:<br>**
 **Ubuntu server Bash**<br>
-- _ls -l<br>_
+- _`ls -l`<br>_
 - _`sudo scp /ubuntu-server/path/to/filename <windows-username>@windows-ip:"C:\\Users\\windows-nameofuser\\...\\destination\\"`<br>_
   
 **OPTION C: Copy file from Windows client machine (via WSL) to Ubuntu server VM.<br>**
 **The list of all commands used in Step 3, Option C:<br>**
 **Ubuntu server Bash**<br>
-- _pwd<br>_
-- _ls -l<br>_
+- _`pwd`<br>_
+- _`ls -l`<br>_
 - _`sudo scp <WSL-username>@<WSL-ip>:"/mnt/c/Users/windows-nameofuser/.../filename" /ubuntu-server/path/to/destination`_
   
 ### Step 4: Copy files using "rsync" (Fast Sync for Large Files).
 **OPTION I: Copy from Ubuntu server VM to Windows machine via WSL.<br>**
 **The list of all commands used in Step 4, Option I:<br>**
 **Ubuntu server Bash**<br>
-- _pwd<br>_
-- _ls -l<br>_
+- _`pwd`<br>_
+- _`ls -l`<br>_
 - _`sudo rsync -avz /ubuntu-server/path/to/filename <WSL-username>@<WSL-ip>:"/mnt/c/Users/windows-nameofuser/.../destination/"`<br>_
 
 > The -avz are **options** (also called "**flags**") we passed to rsync, and they control how the file transfer happens.<br>
@@ -96,8 +96,8 @@ Install and enable SSH and rsync on the Ubuntu server.<br>
 **OPTION III: Copy file from Windows machine (via WSL) to Ubuntu server VM.<br>**
 **The list of all commands used in Step 4, Option III:<br>**
 **Ubuntu server Bash**<br>
-- _pwd<br>_
-- _ls -l<br>_
+- _`pwd`<br>_
+- _`ls -l`<br>_
 - _`sudo rsync -avz <WSL-username>@<WSL-ip>:"/mnt/c/Users/windows-nameofuser/.../filename" /ubuntu-server/path/to/destination`_
 
 ## Which Method to Use?
