@@ -110,7 +110,17 @@ git clone https://github.com/your-username/project-name.git
 cd project-name
 chmod +x install.sh
 ./install.sh
+```bash
 
+---
+### 📁 When to Use a Separate File:
+Use a separate file (like `scripts.md` or `docs/commands.md`) if:
+- You have a **long list of scripts/commands** (to keep the README clean).
+- You want to **group commands by platform** (e.g., `bash-commands.md`, `powershell-setup.md`).
+- You want to maintain **detailed documentation or training material**.
+
+🧠 *Structure suggestion:*
+---
 
 ## LinkedIn Article.
 - [File Sharing Using scp and rsync](https://www.linkedin.com/pulse/file-sharing-using-scp-rsync-enoch-agbu-yeynf/)
