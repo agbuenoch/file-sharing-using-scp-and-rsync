@@ -16,13 +16,13 @@ Check out the **screenshot folder** for the screenshots of the entire process.
 Install and enable SSH and rsync on the Ubuntu server.<br>
 **The list of all commands used in Step 1:<br>**
 **Ubuntu server Bash**<br>
-- _ip a <br>
-- ssh --version<br>
-- wireshark --version<br>
-- rsync --version<br>
-- sudo systemctl status ssh<br>
-- sudo systemctl status rsync<br>
-- ssh <ubuntu_server_username>@<ubuntu_server_IPv4>_
+- _ip a <br>_
+- _ssh --version<br>_
+- _wireshark --version<br>_
+- _rsync --version<br>_
+- _sudo systemctl status ssh<br>_
+- _sudo systemctl status rsync<br>_
+- _ssh <ubuntu_server_username>@<ubuntu_server_IPv4>_
 
 ### Step 2: Settings/Configurations of “SSH and rsync” on Windows Client Machine.  
 **OPTION A: Using Windows Subsystem for Linux (WSL) (PREFERRED/RECOMMENDED):** Using the Windows Subsystem for Linux (WSL), install and enable SSH and rsync.<br>
