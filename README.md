@@ -104,6 +104,14 @@ Install and enable SSH and rsync on the Ubuntu server.<br>
 1. For one-time transfers: **scp**. 
 2. For large files: **rsync**.
 
+## 🔧 Installation
+```bash
+git clone https://github.com/your-username/project-name.git
+cd project-name
+chmod +x install.sh
+./install.sh
+
+
 ## LinkedIn Article.
 - [File Sharing Using scp and rsync](https://www.linkedin.com/pulse/file-sharing-using-scp-rsync-enoch-agbu-yeynf/)
 
