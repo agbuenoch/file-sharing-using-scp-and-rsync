@@ -15,7 +15,7 @@ Check out **[screenshots](screenshots)** folder for the screenshots of the entir
 ### Step 1: Settings/Configurations of “SSH and rsync” on Ubuntu Server VM.
 Install and enable SSH and rsync on the Ubuntu server.<br>
 **The list of all commands used in Step 1:<br>**
-**Ubuntu server Bash**
+**Ubuntu server Bash:**
 ```bash
 - ip a
 - ssh --version
@@ -29,21 +29,22 @@ Install and enable SSH and rsync on the Ubuntu server.<br>
 ### Step 2: Settings/Configurations of “SSH and rsync” on Windows Client Machine.  
 **OPTION A: Using Windows Subsystem for Linux (WSL) (PREFERRED/RECOMMENDED):** Using the Windows Subsystem for Linux (WSL), install and enable SSH and rsync.<br>
 **The list of all commands used in Step 2, Option A.<br>**
+**Windows PowerShell:**
 ```powershell
 wsl --install
 ```
-**Windows PowerShell**<br>
-- _`wsl --install`_<br>
 
 **Ubuntu server Bash**<br>
-- _`sudo apt install ssh`_<br>
-- _`ssh --version`_<br>
-- _`rsync --help`_<br>
-- _`sudo apt install rsync`_<br>
-- _`cd /mnt/c/`_<br>
-- _`ls -l | head -n 4`_<br>
-- _`whoami`_<br>
-- _`ip a`_<br>
+```bash
+- _`sudo apt install ssh`_
+- ssh --version
+- rsync --help
+- sudo apt install rsync
+- cd /mnt/c/
+- ls -l | head -n 4
+- whoami
+- ip a
+```
 
 **OPTION B: Using PowerShell (OPTIONAL).**: Using PowerShell, install and enable SSH. Note that rsync cannot be installed directly using PowerShell because it is a Linux tool.<br>
 **The list of all commands used in Step 2, Option B:<br>**
