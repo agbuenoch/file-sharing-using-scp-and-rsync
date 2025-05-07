@@ -26,9 +26,10 @@ Install and enable SSH and rsync on the Ubuntu server.<br>
 
 ### Step 2: Settings/Configurations of “SSH and rsync” on Windows Client Machine.  
 **OPTION A: Using Windows Subsystem for Linux (WSL) (PREFERRED/RECOMMENDED):** Using the Windows Subsystem for Linux (WSL), install and enable SSH and rsync.<br>
-**The list of all commands used in Step 2, Option A<br>**
+**The list of all commands used in Step 2, Option A.<br>**
 **Windows PowerShell**<br>
 - _wsl --install<br>_
+
 **Ubuntu server Bash**<br>
 - _sudo apt install ssh<br>
 - ssh --version<br>
@@ -50,6 +51,7 @@ Install and enable SSH and rsync on the Ubuntu server.<br>
 - ipconfig<br>
 - whoami<br>
 - exit<br>_
+
 **Ubuntu server Bash**<br>
 - _ping <windows_IPv4>
 - ssh <windows_username>@<windows_IPv4>_
@@ -64,7 +66,7 @@ Install and enable SSH and rsync on the Ubuntu server.<br>
 **The list of all commands used in Step 3, Option B:<br>**
 **Ubuntu server Bash**<br>
 - _ls -l_<br>
-sudo scp /ubuntu-server/path/to/filename <windows-username>@windows-ip:"C:\\Users\\windows-nameofuser\\...\\destination\\"_<br>
+- sudo scp /ubuntu-server/path/to/filename <windows-username>@windows-ip:"C:\\Users\\windows-nameofuser\\...\\destination\\"_<br>
   
 **OPTION C: Copy file from Windows client machine (via WSL) to Ubuntu server VM.<br>**
 **The list of all commands used in Step 3, Option C:<br>**
