@@ -110,11 +110,11 @@ The Openssh-client and Openssh-server have been successfully installed as pointe
 We would set the Openssh server to automatically start each time we boot our system. Run the command pointed out by the 1st arrow to show the current status of the server, which is “Stopped” as pointed out by the 2nd arrow. Run the command pointed out by the 3rd arrow to automatically start the Openssh server each time we boot the system. The command pointed out by the 4th arrow will start the Openssh server. When we view the Openssh server this time using the command pointed to by the 5th arrow, the status has changed to “Running” as pointed to by the 6th arrow.<br>
 **View: [step2B5](screenshots/step2B5)**
 
-**IMPORTANT:**<br>
+**IMPORTANT:<br>**
 `Stop-Service sshd`  =>Run this command to stop the openssh server.<br>
 `Start-Service sshd` =>Run this command to start the openssh server.
 
-**Get the Windows Client Machine details.**<br>
+**Get the Windows Client Machine details.<br>**
 Note down these details, it will be required when sharing/copying files with another system.
 
 When you run the command `ipconfig` in Windows PowerShell, you may see multiple IPv4 addresses—especially if you have: 
@@ -122,7 +122,7 @@ When you run the command `ipconfig` in Windows PowerShell, you may see multiple 
 - VPNs (like OpenVPN, NordVPN), or
 - Virtual network adapters (VMware, VirtualBox, WSL).
 
-**Pick the IP based on your network setup:**<br>
+**Pick the IP based on your network setup:<br>**
 - If you are connected via WiFi: Use the IP under Wireless LAN adapter Wi-Fi. Example: 192.168.1.100
 - If connected via Ethernet (via a cable): Use the IP under Ethernet adapter Ethernet. Example: 10.0.0.5
 - Ignore these IPs:172.x.x.x (usually Windows Subsystem Linux–WSL or Docker). 192.168.152.1 (VMware NAT interface—only for VM-internal traffic). These IPs are NOT used for the transfer/sharing of files.
@@ -133,15 +133,15 @@ Therefore, let's find the Windows client machine `IPs`. Run the command pointed 
 I am connected via WiFi as underlined below. If the file sharing/copying will be directly with the Windows client machine (NOT via WSL), the IPv4 address under it shall be used.<br>
 **View: [step2C2](screenshots/step2C2)**
 
-**Verify Connectivity:**<br>
+**Verify Connectivity:<br>**
 From your Ubuntu VM terminal, ping the chosen Windows client machine IP as pointed to by the 1st arrow. If ping succeeds, this is the correct IP. If ping fails: Try another IPv4 address from the list. As pointed out by the 2nd arrow, we have successfully pinged the Windows IP.<br>
 **View: [step2C3](screenshots/step2C3)**
 
-**NOTE: VMware Network Mode.**<br>
+**NOTE: VMware Network Mode.<br>**
 - Bridged: Your VM shares the host’s WiFi/Ethernet IP (e.g., `192.168.1.100`).
 - NAT: Your VM gets a separate IP (e.g., `192.168.152.x`), but the host’s IP is still `192.168.1.100`.
 
-**Check the Windows client username:**<br>
+**Check the Windows client username:<br>**
 Run the command pointed to by the 1st arrow. Your Windows client machine username will be returned as underlined and pointed to by the 2nd arrow.<br>
 **View: [step2D1](screenshots/step2D1)**
 
