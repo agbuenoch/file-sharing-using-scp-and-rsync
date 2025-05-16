@@ -213,7 +213,7 @@ Therefore:<br>
 `/ubuntu-server/path/to/destination` Is the destination path.
 
 ## Step 4: Copy files using "rsync" (Remote SYNCchronisation).
-`rsync` refers to "Remote SYNChronization". This is similar to the `scp` command, just replace the scp with the `rsync` command.
+`rsync` refers to "Remote SYNChronization". This is similar to the `scp` command; replace the `scp` command with the `rsync` command.
 
 ### OPTION I: Copy from Ubuntu server VM to Windows machine via WSL.
 ```bash
