@@ -172,7 +172,7 @@ sudo scp /ubuntu-server/path/to/filename <WSL-username>@<WSL-ip>:"/mnt/c/Users/w
 ```
 Run the command highlighted in green on the screenshot. I already have these files residing in my Ubuntu server's current directory.
 
-After running the command in green to copy the file, provide your Ubuntu server password as pointed to by the 1st arrow, also provide the password for the WLS user as pointed to by the 2nd arrow. The 3rd arrow points to the file being copied, and the 4th arrow points to the progress percentage of the copied file. It was copied to the Windows client machine via the WSL 100%.
+After running the command in green to copy the file, provide your Ubuntu server password as pointed to by the 1st arrow, also provide the password for the WLS user as pointed to by the 2nd arrow. The 3rd arrow points to the file being copied, and the 4th arrow points to the progress percentage of the copied file. It was copied to the Windows client machine via the WSL 100%.<br>
 **View: [step3A1](screenshots/step3A1)**
 
 `scp` Is the command used to copy the file.<br>
