@@ -250,16 +250,8 @@ The 5th arrow points to the copied file after successfully copying it to the Ubu
 **NOTE:** The `OPTION III` worked because `WSL` is standing as an intermediary between the Windows client machine and the Ubuntu server VM, and because `WSL` is an Ubuntu system, `rsync` was installed and can be used to communicate with another Linux system (Ubuntu server VM).
 
 **Which Method to Use?**
-- For one-time transfers: scp. 
-- For large files: rsync
-
-
-
-
-
-
-
-===========================================================================
+- For one-time transfers: `scp`. 
+- For large files: `rsync`
 
 ## LinkedIn Article.
 - [File Sharing Using scp and rsync](https://www.linkedin.com/pulse/file-sharing-using-scp-rsync-enoch-agbu-yeynf/)
